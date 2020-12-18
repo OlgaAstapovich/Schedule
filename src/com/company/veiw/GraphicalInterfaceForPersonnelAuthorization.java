@@ -3,8 +3,8 @@ package com.company.veiw;
 import javax.swing.*;
 import java.awt.*;
 
-public class GraphicalInterfaceForTeacherAuthorization extends JFrame{
-    void authorization(){
+public class GraphicalInterfaceForPersonnelAuthorization extends JFrame{
+    void authorization() {
     }
 
     private JLabel loginLabel = new JLabel("Логин:");
@@ -13,7 +13,7 @@ public class GraphicalInterfaceForTeacherAuthorization extends JFrame{
     private JPasswordField passwordInput = new JPasswordField();
     private JButton okButton = new JButton("Ок");
 
-    public GraphicalInterfaceForTeacherAuthorization(){
+    public GraphicalInterfaceForPersonnelAuthorization(){
         super("Авторизация");
         setBounds(400,50, 400, 240);
         setDefaultCloseOperation(this.EXIT_ON_CLOSE);
@@ -27,11 +27,10 @@ public class GraphicalInterfaceForTeacherAuthorization extends JFrame{
         this.passwordInput.setBounds(200, 80, 150, 30);
         this.okButton.setBounds(140, 150, 100, 30);
 
-        container.add(this.loginLabel);
-        container.add(this.passwordLabel);
-        container.add(this.loginInput);
-        container.add(this.passwordInput);
-        container.add(this.okButton);
+        container.add(loginLabel);
+        container.add(passwordLabel);
+        container.add(loginInput);
+        container.add(passwordInput);
+        container.add(okButton);
     }
-
 }
